@@ -4,6 +4,6 @@ binaryData:
 kind: ConfigMap
 metadata:
   creationTimestamp: null
-  name: default-local
+  name: validation-flow-default-local
   annotations: 
     argocd.argoproj.io/sync-wave: "310"
