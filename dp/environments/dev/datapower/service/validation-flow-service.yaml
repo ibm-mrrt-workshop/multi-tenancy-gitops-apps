@@ -1,5 +1,5 @@
 kind: Service
-apiVersion: v1
+apiVersion: route.openshift.io/v1
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "360"
@@ -7,7 +7,7 @@ metadata:
   namespace: validation-flow-migration
 spec:
   selector:
-    app.kubernetes.io/instance: datapower-instance-validation-flow-migration
+    app.kubernetes.io/instance: validation-flow-migration-validation-flow-migration
   ports:
     - name: validation-flow-mpgw
       protocol: TCP
