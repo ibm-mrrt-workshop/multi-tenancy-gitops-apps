@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "370"
   name: validation-flow-route
-  namespace: datapower-instance
+  namespace: validation-flow-migration
 spec:
   to:
     kind: Service
