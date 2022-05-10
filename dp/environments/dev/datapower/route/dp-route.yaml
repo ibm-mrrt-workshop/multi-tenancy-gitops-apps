@@ -1,0 +1,29 @@
+# kind: Route
+# apiVersion: route.openshift.io/v1
+# metadata:
+#   name: migration-example-0
+#   namespace: tools
+#   annotations:
+#     argocd.argoproj.io/sync-wave: "370"
+# spec:
+#   to:
+#     kind: Service
+#     name: migration-example-0
+#     weight: 100
+#   port:
+#     targetPort: 8001
+#   wildcardPolicy: None
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "370"
+  name: mpgw
+  namespace: tools
+spec:
+  to:
+    kind: Service
+    name: example-service
+    weight: 100
+  port:
+    targetPort: mpgw

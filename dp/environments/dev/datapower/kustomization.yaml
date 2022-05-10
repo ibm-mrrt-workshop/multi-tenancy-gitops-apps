@@ -1,0 +1,6 @@
+resources:
+- configmap/default-cfg.yaml
+- configmap/default-local.yaml
+- datapower/migration-example.yaml
+- service/dp-service.yaml
+- route/dp-route.yaml
