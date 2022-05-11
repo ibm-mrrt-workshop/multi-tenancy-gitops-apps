@@ -1336,4 +1336,4 @@ metadata:
   creationTimestamp: null
   name: validation-flow-default-cfg
   annotations: 
-    argocd.argoproj.io/sync-wave: "320"
+    argocd.argoproj.io/sync-wave: "315"
